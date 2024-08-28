@@ -52,12 +52,15 @@
             </nav>
 
             <!-- Search, Cart, and Button -->
-            <div class="flex items-center space-x-4">
-                <i class="fa-solid fa-magnifying-glass bg-gray-400 w-8 h-8 p-2 rounded-full text-white flex items-center justify-center"></i>
-                <i class="fa-solid fa-cart-shopping bg-gray-400 w-8 h-8 p-2 rounded-full text-white flex items-center justify-center"></i>
+            <div class=" md:flex items-center space-x-4">
+
+                <i class="fa-solid fa-bars md:hidden "></i>
+
+                <i class="hidden md:flex fa-solid fa-magnifying-glass bg-gray-400 w-8 h-8 p-2 rounded-full text-white items-center justify-center"></i>
+                <i class="hidden md:flex fa-solid fa-cart-shopping bg-gray-400 w-8 h-8 p-2 rounded-full text-white items-center justify-center"></i>
                 
                 <!-- Book Consult Button -->
-                <button class="bg-green-400 text-black font-bold py-2 px-4 rounded-full flex items-center space-x-2 hover:bg-green-500">
+                <button class="hidden md:flex bg-green-400 text-black font-bold py-2 px-4 rounded-full items-center space-x-2 hover:bg-green-500">
                     <span>Book Consult</span>
                     <i class="fa-solid fa-arrow-right -rotate-45 bg-black w-5 h-5 flex items-center justify-center rounded-full text-white"></i>
                 </button>
@@ -67,11 +70,11 @@
         <br>
         <div >
 
-            <h1 class="text-center font-bold text-7xl">A barn house of this design has a striking appearance</h1>
+            <h1 class="text-center font-bold text-4xl md:text-7xl">A barn house of this design has a striking appearance</h1>
 
             <br>
             
-            <p >The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+            <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
 
             </p>
         </div> 
@@ -129,8 +132,8 @@
             </div>
     
             <!-- Right Section (Image) -->
-            <div class="flex justify-center items-center">
-                <img src="Rectangle.png" alt="Modern Building" class="rounded-lg shadow-lg w-full">
+            <div class="flex justify-center items-center  ">
+                <img class="h-fit py-16" src="Rectangle.png" alt="Modern Building" class="rounded-lg shadow-lg w-full">
             </div>
         </div>
 
@@ -270,57 +273,60 @@
             <p class="text-gray-600 mt-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
 
-        <!-- Portfolio Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"> 
-            <!-- Portfolio Item 1 (Large, spanning two columns) -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden md:col-span-2 lg:col-span-3 flex"> 
-                <img src="img1.png" alt="Portfolio Image 1" class="w-full h-48 object-cover md:w-1/3"> 
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold">Commercial</h3>
-                    <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
-                    <a href="#" class="text-green-600 font-semibold inline-flex items-center hover:underline">
-                        View Details <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
+       <!-- Portfolio Grid -->
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"> 
+        <!-- Portfolio Item 1 (Large, spanning two columns) -->
+        <div class="bg-white  rounded-3xl shadow-md md:col-span-2 lg:col-span-3 lg:flex lg:flex-row "> 
+            <img src="img1.png" alt="Portfolio Image 1" class="w-full h-auto object-cover md:w-1/3 px-6 py-6"> 
+            <div class="p-6">
+                <h3 class="text-xl font-semibold">Simplicity</h3>
+                <p class="text-gray-500">Customizable simple designs</p>
+                <a href="#" class="text-green-600 font-semibold inline-flex items-center hover:underline">
+                    View Details <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
             </div>
+        </div>
+
+
             <!-- Portfolio Item 2 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="img2.png" alt="Portfolio Image 2" class="w-full h-48 object-cover"> 
+                <img src="img2.png" alt="Portfolio Image 2" class="w-full h-48 object-cover px-6 py-6 rounded-lg "> 
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">Commercial</h3>
-                    <p class="text-gray-500 mb-4">The barn house captivates with its blend of rustic charm and modern.</p>
+                    
+                    
                     <a href="#" class="text-green-600 font-semibold inline-flex items-center hover:underline">
-                        View Details <i class="fa-solid fa-arrow-right ml-2"></i>
+                        View Details <i class="fa-solid fa-arrow-right ml-2 "></i>
                     </a>
                 </div>
             </div>
             <!-- Portfolio Item 3 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden md:col-span-1">
-                <img src="img3.png" alt="Portfolio Image 3" class="w-full h-48 object-cover">
-                <div class="p-6">
+                <img src="img3.png" alt="Portfolio Image 3" class="w-full px-6 py-6 h-48 object-cover">
+                <div class="p-6"> 
+                    
                    
                 </div>
             </div>
             <!-- Portfolio Item 4 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden md:col-span-2 lg:col-span-2"> 
-                <img src="img4.png" alt="Portfolio Image 4" class="w-full h-48 object-cover">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden md:col-span-2 lg:col-span-2 lg:flex lg:flex-row"> 
+                <img class="w-75 h-48 px-6 py-6 " src="img4.png" alt="Portfolio Image 4" >
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">Commercial</h3>
-                    <p class="text-gray-500 mb-4">The barn house captivates with its blend of rustic charm and modern.</p>
+                    <h3 class="text-xl font-semibold mb-2">Modern Architecture</h3>
+                    <p class="text-gray-500 mb-4">Modern and elegant designs</p>
                     <a href="#" class="text-green-600 font-semibold inline-flex items-center hover:underline">
                         View Details <i class="fa-solid fa-arrow-right ml-2"></i>
                     </a>
                 </div>
             </div>
             <!-- Portfolio Item 5 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="img5.png" alt="Portfolio Image 5" class="w-full h-48 object-cover">
+            <div class="bg-white rounded-lg shadow-md ">
+                <img class="w-full h-48 object-cover px-6 py-6 " src="img5.png" alt="Portfolio Image 5" >
                 <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2">Commercial</h3>
-                    <p class="text-gray-500 mb-4">The barn house captivates with its blend of rustic charm and modern.</p>
-                    <a href="#" class="text-green-600 font-semibold inline-flex items-center hover:underline">
+                    <!-- <h3 class="text-xl font-semibold mb-2">Commercial</h3>
+                    <p class="text-gray-500 mb-4">The barn house captivates with its blend of rustic charm and modern.</p> -->
+                    <!-- <a href="#" class="text-green-600 font-semibold inline-flex items-center hover:underline">
                         View Details <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -332,28 +338,126 @@
 </div>
 
 
-
-<div>
-
-
-
-
-
-
-
-
-
+ <section class="bg-gray-100  ">
+      <!-- Heading -->
+      <div class="text-center mb-6 mt-6">
+        <button class="bg-lime-500 text-white py-2 px-4 mt-6 rounded-full mb-4">
+          Rinterio News
+        </button>
+        <h2 class="text-3xl font-bold text-gray-800">Read Our Articles and News</h2>
+        <p class="text-gray-600 mt-2">Click below to know more about our ongoing projects</p>
+      </div>  
 
 
+      <!-- Card section -->
+
+      <div class="grid grid-cols-1 gap-5 md:grid-cols-3"> 
 
 
-</div>
+        <!-- card-1 -->
+
+
+        <div class="bg-white rounded-xl mx-auto ">
+
+
+            <!-- image-section --> 
+
+            <img class="w-3/4 mx-auto py-4" src="article1.png" alt=""> 
+
+
+            <h2 class="px-5 text-gray-500 "> <i class="fa-regular fa-calendar"></i> August 27,2024  <i class="fa-regular fa-user"></i> Admin </h2> 
+
+            <br>
+
+            <h2 class="px-5 font-bold">How to chose the right <br> architecture for your home</h2>  
+
+            <br>
+
+            <p class="px-5 text-gray-500">The durability and functionability of your <br> home relies on the architecure it's built on</p>
+
+            <br>
+
+            <a href="#" class="text-green-600 px-5  font-semibold inline-flex items-center hover:underline">
+                View Details <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+
+
+            <br>
+
+        </div> 
 
 
 
+          <!-- card-2 -->
 
-    <footer>
 
+          <div class="bg-white rounded-xl mx-auto ">
+
+
+            <!-- image-section --> 
+
+            <img class="w-3/4 mx-auto py-4" src="article2.png" alt=""> 
+
+
+            <h2 class="px-5 text-gray-500 "> <i class="fa-regular fa-calendar"></i> August 27,2024  <i class="fa-regular fa-user"></i> Admin </h2> 
+
+            <br>
+
+            <h2 class="px-5 font-bold">How to chose the right <br> furniture for your home</h2>  
+
+            <br>
+
+            <p class="px-5 text-gray-500"> Furnish your home <br> with customized expert designs</p>
+
+            <br>
+
+            <a href="#" class="text-green-600 px-5  font-semibold inline-flex items-center hover:underline">
+                View Details <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+
+
+            <br>
+
+        </div>
+
+
+
+          <!-- card-3 -->
+
+
+          <div class="bg-white rounded-xl mx-auto ">
+
+
+            <!-- image-section --> 
+
+            <img class="w-3/4 mx-auto py-4" src="article3.png" alt=""> 
+
+
+            <h2 class="px-5 text-gray-500 "> <i class="fa-regular fa-calendar"></i> August 27,2024  <i class="fa-regular fa-user"></i> Admin </h2> 
+
+            <br>
+
+            <h2 class="px-5 font-bold"> Customized plans for interior design <br> to make your home look elegant</h2>  
+
+            <br>
+
+            <p class="px-5 text-gray-500">Try out our customized interior <br> home designs</p>
+
+            <br>
+
+            <a href="#" class="text-green-600 px-5  font-semibold inline-flex items-center hover:underline">
+                View Details <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+
+
+            <br>
+
+        </div> 
+
+        <br>
+ </div>
+
+</section>
 
         <!-- Feedback section -->
 
@@ -558,8 +662,16 @@ py-10 px-4 md:px-16 mt-20">
           </button>
 
 
+          <br>
+
+          <br>
+
+
           </div> 
+
+          
 
 
 </body>
 </html>
+
